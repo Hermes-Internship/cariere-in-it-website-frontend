@@ -1,0 +1,94 @@
+*{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.navbar{
+    background-color: #079247 !important;
+    position: relative;
+    padding: 0;
+
+
+.organization-logo-navbar{
+
+    margin-left: 1.5%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+
+
+#navbar-items{
+    position: absolute;
+    right: 0;
+
+    .nav-item{
+        margin-right: 30px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+
+        .nav-link{
+            font-size: 16px;
+            font-weight: bold;
+            padding: 0 !important;
+        }
+    }
+
+    
+  }
+}
+
+
+
+
+.page-footer{
+    background-color: #606161;
+    bottom: 0;
+    position: absolute;
+    width: 100% !important;
+    margin: 0;
+    display: table;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+
+#contact-paragraph{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.organization-info-title{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.organization-info{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 45px;
+}
+
+.event-details{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.organization-logo{
+    margin-bottom: 20px;
+}
+
+.social-media-logos{
+    margin-bottom: 15px;
+}
+
+.facebook-logo{
+    margin-right: 20px;
+}
