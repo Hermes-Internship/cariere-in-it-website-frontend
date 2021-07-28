@@ -6,7 +6,7 @@
   
   <nav class="navbar navbar-expand-lg navbar-dark">
     
-    <img class="organization-logo-navbar" src="/assets/images/Hermes Original Log - SubText.png" alt="Societatea Hermes Logo" width="9%" height="5%">
+    <img class="organization-logo-navbar" src="/assets/images/Hermes-Original-SubText-White.png" alt="Societatea Hermes Logo" width="9%" height="5%">
     <div class="collapse navbar-collapse" id="navbar-items">
       <ul class="nav navbar-nav">
         <li class="nav-item active">
@@ -26,6 +26,22 @@
   </nav>
 </div>
 <img class="cariereInIT-Logo" src="/assets/images/CariereInITLogo.png" alt="Cariere in IT Logo" width="100%">
+<div class="event-timeline">
+  <div class="row">
+    <div class="col-12">
+      <p class="schedule-section-title">Orar</p>
+    </div>
+  </div>
+  <div class="content">
+    <div class="row">
+      <div class="col-12">
+        <div class="circle-with-border">
+          <div class="vertical-line"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="page-footer text-center text-white .no-padding .container-fluid">
   <div class="row">
     <p id="contact-paragraph">Contact</p>
@@ -39,7 +55,7 @@
       <p class="organization-info-title">Email</p>
       <p class="organization-info">cariereinit@societatea-hermes.ro</p>
       <p class="event-details">Un eveniment marca</p>
-      <img class="organization-logo" src="/assets/images/Hermes Original Log - SubText.png" alt="Societatea Hermes Logo" width="50%" height="50%">
+      <img class="organization-logo" src="/assets/images/Hermes-Original-SubText-White.png" alt="Societatea Hermes Logo" width="50%" height="50%">
     </div>
     <div class="col-4">
       <p class="organization-info-title social-media-logos">Social Media</p>
@@ -52,3 +68,37 @@
     </div>
   </div>
 </div>
+
+
+<!--
+  <div class="row">                                
+    <div class="col-md-12 timeline">                                    
+    <section id="cd-timeline" class="cd-container">                                        
+      <?php $itemRedShown = 0; ?>                                        
+      @foreach($timeline as $key => $val)
+        <?php                                                
+              $keyExploded = explode(' ', $val['start_date']); 
+              $dateExploded = explode('-', $keyExploded[0]);
+              $dateTmp = Carbon\Carbon::createFromFormat('Y-m-d H:i', $val['start_date']);
+              $dateTmpEnd = Carbon\Carbon::createFromFormat('Y-m-d H:i', $val['end_date']);
+              if($dateTmp->gt($currentDT)) {
+                $itemRedShown++;
+              } 
+              elseif($dateTmp->lte($currentDT) && $dateTmpEnd->gt($currentDT)) { 
+                $class = "cd-location"; // In desfasurare..  
+                $class = "cd-picture"; // A fost..  
+                $isHidden = false;
+                if($class == "cd-picture") {
+                  $isHidden = true;
+                } elseif($class == 'cd-movie' && $itemRedShown > 2) { 
+                  $isHidden = true;  
+                }?>
+                <div class="cd-timeline-block {{$isHidden ? 'hiddenItem' : ''}}">
+                  <div class="cd-timeline-img {{$class}}">
+                    <div class="cd-timeline-content">
+                      <h2>{{$key}}</h2>
+                      <span class="cd-date">{{$keyExploded[1]}} ({{$dateExploded[2]}} Nov)</span></div></div> @endforeach
+                   </section>
+                  </div>
+                </div>
+-->

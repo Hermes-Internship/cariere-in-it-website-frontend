@@ -3,13 +3,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-
-
 .navbar{
     background-color: #079247 !important;
     position: relative;
     padding: 0;
-
 
 .organization-logo-navbar{
 
@@ -17,8 +14,6 @@
     margin-top: 3px;
     margin-bottom: 3px;
 }
-
-
 
 #navbar-items{
     position: absolute;
@@ -33,28 +28,29 @@
             font-size: 16px;
             font-weight: bold;
             padding: 0 !important;
+            color: white;
         }
     }
   }
 }
 
 .page-footer{
-    background-color: #606161;
+    background-color: #333333;
     bottom: 0;
     width: 100% !important;
     margin: 0;
     display: table;
 
     #contact-paragraph{
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
         font-size: 30px;
         font-weight: bold;
         padding: 0;
     }
 
     .organization-info-title{
-        font-size: 24px;
+        font-size: 22px;
         font-weight: bold;
     }
     
@@ -65,9 +61,9 @@
     }
     
     .event-details{
-        font-size: 24px;
+        font-size: 22px;
         font-weight: bold;
-        margin-top: 20px;
+        margin-top: 40px;
         margin-bottom: 10px;
     }
     
@@ -90,4 +86,41 @@
 
 .no-padding {
     padding: 0 !important;
+}
+
+.event-timeline {
+    .col-12{
+        padding: 0 !important;
+        background-color: #079247 !important;
+        .schedule-section-title{
+            font-size: 32px;
+            color: white;
+            margin-left: 5%;
+            margin-top: 12px;
+            margin-bottom: 12px;
+            font-weight: bold;
+        }
+    }
+    .content{
+        .col-12{
+            padding: 0 !important;
+            background-color:  #333333!important;
+            .circle-with-border{
+                margin: auto;
+                background-color: #75ce66;
+                border:3.5px solid white;    
+                height:60px;
+                border-radius:50%;
+                -moz-border-radius:50%;
+                -webkit-border-radius:50%;
+                width:60px;
+                .vertical-line{
+                    border-left: 3.5px solid white;
+                    left: 50%;
+                    height: 60px;
+                    margin-left: 25px;
+                }
+            }  
+        }
+    }
 }
