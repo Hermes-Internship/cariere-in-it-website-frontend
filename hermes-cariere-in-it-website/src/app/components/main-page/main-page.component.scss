@@ -3,6 +3,37 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.cariereInIT-Logo{
+    margin-top: -10%;
+    
+}
+
+.about-section{
+    padding-left: 22%;
+    padding-right: 22%;
+    padding-top: 9%;
+    padding-bottom: 3%;
+    
+    h2{
+        font-size: 40px;
+        text-align: center;
+        color:#444 !important;
+        font-weight:bold;
+    }
+
+
+
+    p{
+        padding-top: 2.5em;
+        font-size: 21px;
+        text-align: center;
+        line-height: 1.7em;
+        color:#555555 !important;
+        font-weight:bold;
+    }
+}
+
+
 .navbar{
     background-color: #079247 !important;
     position: relative;
@@ -33,6 +64,78 @@
     }
   }
 }
+
+
+.internship-offers-section{
+    .col-4{
+        
+        #first-column-container{
+            margin-left: 10% !important;
+            margin-right: 2.5% !important;
+            
+        }
+        #second-column-container{
+            
+            margin: auto;
+            margin-top: 20px !important;
+
+        }
+        #third-column-container{
+            margin-right: 10% !important;
+        }
+        .container-placement{
+            margin-top: 20px !important;
+            border: 2px black solid;
+            width:90%;
+            height:200px;
+          
+            margin-bottom:25px !important;
+        }
+
+
+
+    }
+
+    .col-3{
+        #fourth-column-container{
+            margin-left:13% !important;
+        }
+
+        #fifth-column-container{
+            margin: auto;
+        }
+        #sixth-column-container{
+            margin: auto;
+        }
+
+        #seventh-column-container{
+            margin-right:20% !important;
+            margin-left: 6.5%;
+        }
+        .second-container-placement{
+            margin-right:3%;
+            width: 80%;
+            height: 150px;
+            margin-bottom:20px !important;
+            border: 2px black solid;
+        }
+    }
+    .third-company-category{
+    margin-left: 2.3% !important;
+    .col{
+        .third-container-placement{
+            margin-right: 3%;
+            width: 83%;
+            height: 120px;
+            margin-bottom:20px !important;
+            border: 2px black solid;
+        }
+    }
+    }
+
+}
+
+
 
 .page-footer{
     background-color: #333333;
@@ -105,22 +208,30 @@
         .col-12{
             padding: 0 !important;
             background-color:  #333333!important;
-            .circle-with-border{
-                margin: auto;
-                background-color: #75ce66;
-                border:3.5px solid white;    
-                height:60px;
-                border-radius:50%;
-                -moz-border-radius:50%;
-                -webkit-border-radius:50%;
-                width:60px;
-                .vertical-line{
-                    border-left: 3.5px solid white;
-                    left: 50%;
-                    height: 60px;
-                    margin-left: 25px;
-                }
-            }  
+            .first-vertical-line{
+                margin-top: 0px;
+                border-left: 3.5px solid white;
+                height: 40px;
+                left: 50%;
+                margin-left: 25px;
+                .circle-with-border{
+                    margin: auto;
+                    background-color: #75ce66;
+                    border:3.5px solid white;    
+                    height:60px;
+                    border-radius:50%;
+                    -moz-border-radius:50%;
+                    -webkit-border-radius:50%;
+                    width:60px;
+                    .vertical-line{
+                        margin-top: 55px;
+                        border-left: 3.5px solid white;
+                        left: 50%;
+                        height: 60px;
+                        margin-left: 25px;
+                    }
+                }  
+            }
         }
     }
 }
