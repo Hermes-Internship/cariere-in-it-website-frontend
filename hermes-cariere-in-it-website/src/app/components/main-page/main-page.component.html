@@ -1,26 +1,29 @@
 
 <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-<div class="navigation-bar ">
-  
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    
+<div class="navigation-bar">
+  <nav class="navbar navbar-expand-lg navbar-dark"> 
     <img class="organization-logo-navbar" src="/assets/images/Hermes-Original-SubText-White.png" alt="Societatea Hermes Logo" width="9%" height="5%">
-    <div class="collapse navbar-collapse" id="navbar-items">
+    <div class="collapse navbar-collapse topnav" id="navbar-items">
       <ul class="nav navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#aboutsection">Despre</a>
+        <li class="nav-item active show-menu-button">
+          <a href="javascript:void(0);" class="responsive-menu" (click)="makeResponsiveMenu()">&#9776;</a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link" routerLink="/schedule" routerLinkActive="active" href="#">Orar</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" routerLink="/register" routerLinkActive="active" href="#">Înscrie-te</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" routerLink="/contact" routerLinkActive="active" href="#">Contact</a>
-        </li>
+        <div >
+          <li class="nav-item active hide-content">
+            <a class="nav-link" href="#aboutsection">Despre</a>
+          </li>
+          <li class="nav-item active hide-content">
+            <a class="nav-link" routerLink="/schedule" routerLinkActive="active" href="#">Orar</a>
+          </li>
+          <li class="nav-item active hide-content">
+            <a class="nav-link" routerLink="/register" routerLinkActive="active" href="#">Înscrie-te</a>
+          </li>
+          <li class="nav-item active hide-content">
+            <a class="nav-link" routerLink="/contact" routerLinkActive="active" href="#">Contact</a>
+          </li>
+        </div>
       </ul>
     </div>
   </nav>
